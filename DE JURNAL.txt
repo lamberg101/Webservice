@@ -1,0 +1,56 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fcub="http://fcubs.ofss.com/service/FCUBSDEService">
+  <soapenv:Header />
+  <soapenv:Body>
+    <fcub:CREATEMJRNLBOOK_FSFS_REQ>
+      <fcub:FCUBS_HEADER>
+        <fcub:SOURCE>FLEXGW</fcub:SOURCE>
+        <fcub:UBSCOMP>FCUBS</fcub:UBSCOMP>
+        <fcub:USERID>PARAMETER4</fcub:USERID>
+        <fcub:BRANCH>319</fcub:BRANCH>
+        <fcub:SERVICE>FCUBSDEService</fcub:SERVICE>
+        <fcub:OPERATION>CreateMjrnlbook</fcub:OPERATION>
+        <fcub:SOURCE_OPERATION>CreateMjrnlbook</fcub:SOURCE_OPERATION>
+      </fcub:FCUBS_HEADER>
+      <fcub:FCUBS_BODY>
+        <fcub:Detbs-Jrnl-Txn-Master-Full>
+          <fcub:BATCH_NO>F007</fcub:BATCH_NO>
+          <fcub:VALUE_DATE>2023-01-02</fcub:VALUE_DATE>
+          <fcub:BRANCH_CODE>319</fcub:BRANCH_CODE>
+          <fcub:CCY>IDR</fcub:CCY>
+          <fcub:TOTAL_DR>20000</fcub:TOTAL_DR>
+          <fcub:TOTAL_CR>20000</fcub:TOTAL_CR>
+          <fcub:MAKER>PARAMETER4</fcub:MAKER>
+          <fcub:Detbs-Jrnl-Txn-Detail>
+            <fcub:SERIAL_NO>1</fcub:SERIAL_NO>
+            <fcub:USER_REF_NO>1</fcub:USER_REF_NO>
+            <fcub:DR_CR>C</fcub:DR_CR>
+            <fcub:BRANCH_CODE>319</fcub:BRANCH_CODE>
+            <fcub:ACCOUNT>3190001313</fcub:ACCOUNT>
+            <fcub:AMOUNT>20000</fcub:AMOUNT>
+            <fcub:CCY>IDR</fcub:CCY>
+            <fcub:TXN_CODE>N09</fcub:TXN_CODE>
+            <fcub:ADDL_TEXT>TES DE</fcub:ADDL_TEXT>
+          </fcub:Detbs-Jrnl-Txn-Detail>
+          <fcub:Detbs-Jrnl-Txn-Detail>
+            <fcub:SERIAL_NO>2</fcub:SERIAL_NO>
+            <fcub:USER_REF_NO>2</fcub:USER_REF_NO>
+            <fcub:DR_CR>D</fcub:DR_CR>
+            <fcub:BRANCH_CODE>319</fcub:BRANCH_CODE>
+            <fcub:ACCOUNT>185001007</fcub:ACCOUNT>
+            <fcub:AMOUNT>20000</fcub:AMOUNT>
+            <fcub:CCY>IDR</fcub:CCY>
+            <fcub:TXN_CODE>N09</fcub:TXN_CODE>
+            <fcub:ADDL_TEXT>TES DE</fcub:ADDL_TEXT>
+          </fcub:Detbs-Jrnl-Txn-Detail>
+          <fcub:Devws-Batch-Master>
+            <fcub:BATCH_NUMBER>F001</fcub:BATCH_NUMBER>
+            <fcub:DESCRIPTION>TES DE</fcub:DESCRIPTION>
+            <fcub:DEBIT>20000</fcub:DEBIT>
+            <fcub:CREDIT>20000</fcub:CREDIT>
+            <fcub:BALANCING>Y</fcub:BALANCING>
+          </fcub:Devws-Batch-Master>
+        </fcub:Detbs-Jrnl-Txn-Master-Full>
+      </fcub:FCUBS_BODY>
+    </fcub:CREATEMJRNLBOOK_FSFS_REQ>
+  </soapenv:Body>
+</soapenv:Envelope>

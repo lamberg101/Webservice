@@ -1,0 +1,44 @@
+SOAP UI
+
+
+http://10.81.6.16:8011/FCUBSRTService/FCUBSRTService?wsdl
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<SOAP-ENV:Header/>
+<SOAP-ENV:Body>
+<ns2:CREATETRANSACTION_FSFS_REQ xmlns:ns2="http://fcubs.ofss.com/service/FCUBSRTService">
+<ns2:FCUBS_HEADER>
+<ns2:SOURCE>RTFSFS</ns2:SOURCE>
+<ns2:UBSCOMP>FCUBS</ns2:UBSCOMP>
+<ns2:USERID>20180383</ns2:USERID>
+<ns2:BRANCH>156</ns2:BRANCH>
+<ns2:SERVICE>FCUBSRTService</ns2:SERVICE>
+<ns2:OPERATION>CreateTransaction</ns2:OPERATION>
+<ns2:FUNCTIONID>DEGRTTLR</ns2:FUNCTIONID>
+</ns2:FCUBS_HEADER>
+<ns2:FCUBS_BODY>
+<ns2:Transaction-Details>
+<ns2:PRD>CHDP</ns2:PRD>
+<ns2:BRN>156</ns2:BRN>
+<ns2:TXNBRN>121</ns2:TXNBRN>
+<ns2:TXNACC>1210041838</ns2:TXNACC>
+<ns2:TXNCCY>IDR</ns2:TXNCCY>
+<ns2:TXNAMT>10000.00</ns2:TXNAMT>
+<ns2:OFFSETCCY>IDR</ns2:OFFSETCCY>
+<ns2:OFFSETAMT>10000.00</ns2:OFFSETAMT>
+<ns2:LCYAMT>10000.00</ns2:LCYAMT>
+<ns2:NARRATIVE>001100017621 </ns2:NARRATIVE>
+<ns2:Denomination-Details>
+<ns2:CDCCY>IDR</ns2:CDCCY>
+<ns2:CDDENOM>NODENOM</ns2:CDDENOM>
+<ns2:VALUE>10000.00</ns2:VALUE>
+<ns2:UNITS>10000.00</ns2:UNITS>
+<ns2:INOUTIND>IN</ns2:INOUTIND>
+<ns2:DENMVAL>1</ns2:DENMVAL>
+</ns2:Denomination-Details>
+</ns2:Transaction-Details>
+</ns2:FCUBS_BODY>
+</ns2:CREATETRANSACTION_FSFS_REQ>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
